@@ -1,0 +1,47 @@
+
+/**
+ * This stylesheet contain the element styles.
+ */
+
+body {
+   color: var(--foreground-rgb);
+   background-color: var(--background-rgb);
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-align: center;
+}
+
+header {
+   margin-bottom: 5svh; /* 5% of small viewport height (svh) */
+}
+
+h1 {
+   color: var(--headline-rgb);
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   column-gap: 3rem;
+}
+
+main div {
+   width: 5rem;
+   border: 2px solid var(--border-rgb);
+   padding: 1rem 2rem;
+}
+
+.box1 {
+   background-color: var(--color-dark-rgb);
+}
+
+.box2 {
+   background-color: var(--color-medium-rgb);
+}
+
+.box3 {
+   background-color: var(--color-light-rgb);
+}
+
+footer {
+   margin-top: 5svh;
+}

@@ -1,0 +1,41 @@
+
+/* 
+ * This file contain the variable declarations for the two color
+ * schemes, light/dark. Which one to use is determined with a media
+ * query that retrieves the user's system preference.
+ */
+
+:root
+{
+  /* 
+   * Light mode
+   */
+
+   --foreground-rgb: rgb(23,17,21);
+   --headline-rgb: rgb(5,89,137);
+   --background-rgb: rgb(255,255,255);
+   --border-rgb: rgb(51,51,51);
+
+   --color-dark-rgb: rgb(144,193,164);
+   --color-medium-rgb: rgb(207,225,196);
+   --color-light-rgb: rgb(232,238,234);
+}
+
+@media (prefers-color-scheme: dark)
+{
+   :root
+   {
+     /* 
+      * Dark mode
+      */
+
+      --foreground-rgb: rgb(255,255,255);
+      --headline-rgb: rgb(218,156,125);
+      --background-rgb: rgb(51,51,51);
+      --border-rgb: rgb(255,255,255);
+      
+      --color-dark-rgb: rgb(117,56,53);
+      --color-medium-rgb: rgb(225,225,170);
+      --color-light-rgb: rgb(232,209,210);
+   }
+}
